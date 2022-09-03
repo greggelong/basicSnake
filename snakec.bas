@@ -1,55 +1,56 @@
-5 REM NEED TO USE XSPEED YSPEED
-10 PRINT"{clear}":POKE53281,9:POKE53280,8
-20 LET L = 1
-30 XSP =0:YSP=0
-40 GOSUB 2000: REM INITALIZE FOOD
-50 DIM X(100) :DIM Y(100): REM ARRAY
-60 X(L) = 20 :Y(L) = 12: REM SNK START
-65 REM MAIN LOOP
-70 GOSUB 3000
-80 REM FOR N = 1 TO 10:NEXT N
-90 GOTO 70
-999 REM READ KEYBOARD INPUT
-1000 GETA$ : REM LISTEN FOR KEY
-1010 IF A$="i" THEN YSP=-1:XSP=0
-1020 IF A$="k" THEN YSP=1:XSP=0
-1030 IF A$="j" THEN XSP=-1:YSP=0
-1040 IF A$="l" THEN XSP=1:YSP=0
-1050 X(L)=X(L)+XSP
-1060 Y(L)=Y(L)+YSP
-1070 IF Y(L)<0 THEN Y(L) = 24
-1080 IF Y(L)>24 THEN Y(L) = 0 
-1200 RETURN
-1990 REM CREATE FOOD
-2000 LET FX = INT(RND(1)*38)+1
-2010 LET FY = INT(RND(1)*22)+1
-2015 PRINT"{clear}"
-2020 POKE1024+FX+40*FY,88
-2030 POKE55296+FX+40*FY,3
-2040 RETURN
-2990 REM DISPLAY SNAKE
-3000 REM FOR I = 1TO L
-3005 POKE 1024+X(1)+40*Y(1),32: REM CLR
-3010 POKE 55296+X(1)+40*Y(1),7
-3015 REM NEXT I
-3020 IF L >1 THEN GOSUB 5000
-3030 GOSUB1000 :REM CHECK KEY
-3040 IFX(L)=FX ANDY(L)=FY THEN GOSUB 4000
-3050 FOR I = 1 TO L
-3060 POKE 1024+X(I)+40*Y(I),81
-3070 POKE 55296+X(I)+40*Y(I),7
-3080 NEXT I
-3090 RETURN
-3990 REM GROW SNAKE
-3999 FOR I = 1TO L
-4000 L = L+1
-4010 X(L)=X(L-1)
-4020 Y(L)=Y(L-1)
-4030 GOSUB 2000
-4040 RETURN
-4990 REM SHIFT SNAKE ARRAY
-5000 FOR I = 1 TO L-1
-5010 X(I)=X(I+1)
-5020 Y(I)=Y(I+1)
-5030 NEXT I
-5040 RETURN 
+
+5 rem need to use xspeed yspeed
+10 print"{clear}":poke53281,9:poke53280,8
+20 let l = 1
+30 xsp =0:ysp=0
+40 gosub 2000: rem initalize food
+50 dim x(100) :dim y(100): rem array
+60 x(l) = 20 :y(l) = 12: rem snk start
+65 rem main loop
+70 gosub 3000
+80 rem for n = 1 to 10:next n
+90 goto 70
+999 rem read keyboard input
+1000 geta$ : rem listen for key
+1010 if a$="i" then ysp=-1:xsp=0
+1020 if a$="k" then ysp=1:xsp=0
+1030 if a$="j" then xsp=-1:ysp=0
+1040 if a$="l" then xsp=1:ysp=0
+1050 x(l)=x(l)+xsp
+1060 y(l)=y(l)+ysp
+1070 if y(l)<0 then y(l) = 24
+1080 if y(l)>24 then y(l) = 0 
+1200 return
+1990 rem create food
+2000 let fx = int(rnd(1)*38)+1
+2010 let fy = int(rnd(1)*22)+1
+2015 print"{clear}"
+2020 poke1024+fx+40*fy,88
+2030 poke55296+fx+40*fy,3
+2040 return
+2990 rem display snake
+3000 rem for i = 1to l
+3005 poke 1024+x(1)+40*y(1),32: rem clr
+3010 poke 55296+x(1)+40*y(1),7
+3015 rem next i
+3020 if l >1 then gosub 5000
+3030 gosub1000 :rem check key
+3040 ifx(l)=fx andy(l)=fy then gosub 4000
+3050 for i = 1 to l
+3060 poke 1024+x(i)+40*y(i),81
+3070 poke 55296+x(i)+40*y(i),7
+3080 next i
+3090 return
+3990 rem grow snake
+3999 for i = 1to l
+4000 l = l+1
+4010 x(l)=x(l-1)
+4020 y(l)=y(l-1)
+4030 gosub 2000
+4040 return
+4990 rem shift snake array
+5000 for i = 1 to l-1
+5010 x(i)=x(i+1)
+5020 y(i)=y(i+1)
+5030 next i
+5040 return 

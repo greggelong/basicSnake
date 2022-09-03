@@ -26,7 +26,7 @@ move with
 
 --- 
 
-## Human readable code in snake.bas
+## Human readable code in snakec.bas
 
 
 

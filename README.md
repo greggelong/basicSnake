@@ -19,6 +19,12 @@ move with
 'l' move left
 
 
+--- 
+
+Human readable code in snake.bas
+
+
+
 -- some bugs found ---
 
 if food randomly placed in the tail of the snake it is overwritten on screen and becomes invisible

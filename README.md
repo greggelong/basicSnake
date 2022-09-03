@@ -8,6 +8,10 @@ This snake game follows the applesoft basic  version that Daniel Shiffman did in
 
 https://youtu.be/MYuEkbd2_pY
 
+## BASIC code
+
+https://github.com/greggelong/basicSnake/snakec.bas
+
 ## BASIC differences
 
 The C64 implementation has to change a few points of the program logic.

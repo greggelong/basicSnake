@@ -2,7 +2,13 @@
 
 
 A place to hold some code for a snake game in C64 basic 
-This snake game follows the applesoft basic  version that Daniel Shiffman did in his coding challenge.
+This snake game follows the applesoft basic  version that Daniel Shiffman did in his coding challenge. https://youtu.be/7r83N3c2kPw
+
+## link to YouTube video
+
+https://youtu.be/MYuEkbd2_pY
+
+## BASIC differences
 
 The C64 implementation has to change a few points of the program logic.
 

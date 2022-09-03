@@ -10,7 +10,7 @@ https://youtu.be/MYuEkbd2_pY
 
 ## BASIC code
 
-https://github.com/greggelong/basicSnake/snakec.bas
+https://github.com/greggelong/basicSnake/blob/main/snakec.bas
 
 ## BASIC differences
 

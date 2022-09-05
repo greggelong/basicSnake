@@ -36,15 +36,18 @@ move with
 
 --- 
 
-## Human readable code in snakec.bas
-
-
 
 -- some bugs found ---
 
 if food randomly placed in the tail of the snake it is overwritten on screen and becomes invisible
 
 ---- notes on coding with Vice emulator---
+
+You can run this on the Vice x64 emulator. 
+
+You can drag the snakec.prg into the emulator, and it will load and run.
+
+Or you can attach the 
 
 I wrote the code on vice emulator saving to a virtual d64 floppy disk
 

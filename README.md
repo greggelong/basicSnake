@@ -41,13 +41,13 @@ move with
 
 if food randomly placed in the tail of the snake it is overwritten on screen and becomes invisible
 
----- notes on coding with Vice emulator---
+## ---- notes on coding with Vice emulator---
 
 You can run this on the Vice x64 emulator. 
 
 You can drag the snakec.prg into the emulator, and it will load and run.
 
-Or you can attach the 
+Or you can attach the snakeGame.d64, and load"snakec",8 
 
 I wrote the code on vice emulator saving to a virtual d64 floppy disk
 

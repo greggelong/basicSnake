@@ -18,7 +18,7 @@ The C64 implementation has to change a few points of the program logic.
 
 -- First the graphics have to be poked to screen memory as c64 basic doesn’t have htab and vtab to place ascii characters.  
 
--- The second biggest difference is the input in C64 we are using GET$ to read the keyboard. GET$ only returns a value when a key is pressed. So I haave to add two other variables for xspeed and yspeed to keep the snake moving in a direction when a key is not pressed.
+-- The second biggest difference is the input. In C64 I am using GET$ to read the keyboard. GET$ only returns a value when a key is pressed. So I haave to add two other variables for xspeed and yspeed to keep the snake moving in a direction when a key is not pressed.
 AppleSoft reads the last character pressed so you don’t need this.
 
 --- 

@@ -2,7 +2,7 @@
 
 
 A place to hold some code for a snake game in C64 basic.
-This snake game follows the applesoft basic  version that Daniel Shiffman did in his coding challenge. https://youtu.be/7r83N3c2kPw
+This snake game follows the applesoft basic  version that Daniel Shiffman did in his coding challenge. https://youtu.be/7r83N3c2kPw I was inspiried to make a Commodore 64 version.  
 
 ## link to YouTube video
 
